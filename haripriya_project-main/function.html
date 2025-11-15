@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>lab2</title>
+        <body>
+            
+            <p id="para">siva</p>
+            <button onclick="document.getElementById('para').innerHTML='helo'"> click here for change</button>
+      
+       <script>
+        function hi(){
+            alert('hello word')
+            document.getElementById('para').innerHTML="hello world"
+        }
+       </script>
+       <button onclick="hi()">click here</button>
+       <select name="" id="colors" onchange="bgcolor()">
+                <option value="red">red</option>
+                <option value="green">green</option>
+                <option value="blue">blue</option>
+                <option value="black">black</option>
+            </select>
+            <script>
+                function bgcolor(){
+                    colors=document.getElementById('colors').value 
+                    document.body.style.backgroundColor=colors
+                }
+            </script>
+            <input type="text" id="data1">
+             <input type="text" id="data2" onkeypress="changedata()">
+
+             <script>
+                function changedata()
+                {
+                    secondbox=document.getElementById('data2').value 
+                    document.getElementById('data1').value=secondbox
+                }
+             </script>
+                </body>
+    </head>
+</html>
